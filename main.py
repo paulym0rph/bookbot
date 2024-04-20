@@ -1,8 +1,7 @@
 def main():
     with open("books/frankenstein.txt") as f:        
         file_contents = f.read()
-    print("--- Begin report of books/frankenstein.txt ---")       
-    #print(file_contents)
+    print("--- Begin report of books/frankenstein.txt ---")      
     count(file_contents)
     print()
     wordCount(file_contents)
@@ -30,5 +29,5 @@ def wordCount(s):
         value = dictionary['value']
         if character.isalpha():
             print("The " + character + " character was found " + str(value) + " times")
-
+            
 main()
